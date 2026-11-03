@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#3a0f1f" />
+    <title>Happy Birthday, Motunrayo — A Digital Love Letter from Daniel</title>
+    <meta
+      name="description"
+      content="A romantic birthday surprise website for Motunrayo, from Daniel."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Css/styles.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-heart">❤</div>
+        <p class="loader-text">Preparing something special…</p>
+        <div class="loader-bar"><span></span></div>
+      </div>
+    </div>
+    <div class="ambient-layer" aria-hidden="true">
+      <canvas id="particles"></canvas>
+    </div>
+    <header class="site-header" id="siteHeader">
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero" class="nav-logo"> Moray <span class="gold">♥</span></a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#moments">Moments</a></li>
+          <li><a href="#letter">Letter</a></li>
+          <li><a href="#love">Love</a></li>
+          <li><a href="#wishes">Wishes</a></li>
+          <li><a href="#surprise">Surprise</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-bg">
+          <div class="hero-gradient"></div>
+          <div class="hero-florals" aria-hidden="true"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow reveal">A birthday surprise, made with love</p>
+          <h1 class="hero-title reveal">
+            Happy Birthday,<br />
+            <span class="hero-name">My Precious Jewel,</span>
+            <span class="heart">❤️</span>
+          </h1>
+          <p class="hero-subtitle reveal">
+            Today the world celebrates the most beautiful soul I know — the
+            woman who turned my ordinary days into poetry. <b>Motunrayo</b>, you are my
+            peace, my joy, and my forever favourite.
+          </p>
+          <div class="hero-actions reveal">
+            <button class="btn btn-primary" id="openSurpriseBtn">
+              <span>Open Your Birthday Surprise</span>
+              <svg
+                class="btn-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </button>
+            <a href="#moments" class="btn btn-ghost">See Your Moments</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-image-frame">
+            <img
+              src="Asset/pic5.jpeg"
+              alt="Motunrayo — beautiful portrait"
+              class="hero-image"
+              loading="eager"
+            />
+            <div class="hero-image-glow"></div>
+          </div>
+          <div class="hero-badge">
+            <span class="badge-year">2026</span>
+            <span class="badge-text">Forever yours, Daniel</span>
+          </div>
+        </div>
+        <a href="#moments" class="scroll-cue" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </section>
+      <!-- ============ MOMENTS / GALLERY ============ -->
+      <section id="moments" class="section moments">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Chapter One</p>
+            <h2 class="section-title">Her Beautiful Moments</h2>
+            <h3>A little collection of the woman who has captured my heart.</h3>
+            <p class="section-desc">
+              Every picture reminds me of something beautiful about you,
+              <b>Ayomide</b> — your smile, your laughter, your elegance and the
+              little moments that make you so special to me. I wish I could
+              frame every moment, but for now, I've gathered a few memories that
+              remind me just how lucky I am to have you.
+            </p>
+          </header>
+          <div class="gallery" id="gallery"></div>
+        </div>
+      </section>
+
+      <!-- ============ VIDEOS ============ -->
+      <section id="motion" class="section motion">
+        <div class="container">
+          <header class="section-head light">
+            <p class="eyebrow">In Motion</p>
+            <h2 class="section-title">Moments in Motion</h2>
+            <h3>Moments I Wish Could Last Forever</h3>
+            <p class="section-desc">
+              ome moments are simply too beautiful to let go of. Your smile,
+              your laughter, your little expressions and the way you make even
+              the simplest moments special. These are little pieces of you I
+              wish I could hold on to forever. Every time I watch them, I'm
+              reminded of just how beautiful it is to have you in my life.
+            </p>
+          </header>
+          <div class="video-grid" id="videoGrid"></div>
+        </div>
+      </section>
+
+      <!-- ============ LETTER ============ -->
+      <section id="letter" class="section letter-section">
+        <div class="container narrow">
+          <header class="section-head">
+            <p class="eyebrow">Chapter Two</p>
+            <h2 class="section-title">A Letter From My Heart ❤️</h2>
+            <h3>
+              For the woman who means more to me than words can ever explain.
+            </h3>
+            <p class="section-desc">
+              There are so many things I wish I could tell you, so many feelings
+              I wish I could put into words. This little letter carries a piece
+              of my heart, a reminder of how much you mean to me and how
+              grateful I am that life brought you my way.
+            </p>
+          </header>
+          <div class="letter-envelope" id="letterEnvelope">
+            <div class="envelope">
+              <div class="envelope-flap"></div>
+              <div class="envelope-body">
+                <div class="envelope-seal">D</div>
+              </div>
+              <div class="envelope-shadow"></div>
+            </div>
+            <button class="btn btn-primary letter-open-btn" id="readLetterBtn">
+              <span>Read My Letter</span>
+            </button>
+          </div>
+          <article class="letter-card" id="letterCard" aria-hidden="true">
+            <div class="letter-paper">
+              <div class="letter-header">
+                <span class="letter-date" id="letterDate"></span>
+                <h3 class="letter-title">My dearest Motunrayo,</h3>
+              </div>
+              <div
+                class="letter-body"
+                id="letterBody"
+                contenteditable="true"
+                spellcheck="true"
+              ></div>
+              <div class="letter-signature">
+                <p>With all my love, always,</p>
+                <p class="sig-name">Daniel</p>
+                <p class="sig-sub">Your person, forever.</p>
+              </div>
+            </div>
+            <p class="letter-edit-hint">
+              You can edit this letter directly — click the text and personalize
+              it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ THINGS I LOVE ============ -->
+      <section id="love" class="section love-section chapter-gated">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow">Chapter Three</p>
+            <h2 class="section-title">Things I Love About You</h2>
+            <p class="section-desc">
+              A few of the infinite reasons you hold my whole heart.
+            </p>
+          </header>
+          <div class="love-grid" id="loveGrid"></div>
+        </div>
+      </section>
+
+      <!-- ============ WISHES & PRAYERS ============ -->
+      <section id="wishes" class="section wishes-section chapter-gated">
+        <div class="container">
+          <header class="section-head light">
+            <p class="eyebrow">Chapter Four</p>
+            <h2 class="section-title">Birthday Wishes &amp; Prayers</h2>
+            <p class="section-desc">
+              My heart's deepest desires for the year ahead of you.
+            </p>
+          </header>
+          <div class="wishes-grid" id="wishesGrid"></div>
+          <div class="wishes-closing">
+            <p>
+              May every sunrise find you smiling, and every sunset find you at
+              peace. Amen.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SURPRISE ============ -->
+      <section id="surprise" class="section surprise-section chapter-gated">
+        <div class="container narrow center">
+          <header class="section-head">
+            <p class="eyebrow">The Final Chapter</p>
+            <h2 class="section-title">There's One More Surprise For You…</h2>
+            <p class="section-desc">
+              When you're ready, press the button. I saved the best for last.
+            </p>
+          </header>
+          <button class="btn btn-surprise" id="surpriseBtn">
+            <span class="surprise-btn-text">Reveal My Surprise</span>
+            <span class="surprise-btn-glow"></span>
+          </button>
+          <div class="surprise-reveal" id="surpriseReveal" aria-hidden="true">
+            <div class="surprise-card">
+              <div class="surprise-hearts" aria-hidden="true">
+                ❤️ ✨ 💖 ✨ ❤️
+              </div>
+              <h3 class="surprise-title">Happy Birthday, My Precious Jewel!</h3>
+              <p class="surprise-msg">
+                Motunrayo, you are the most incredible woman I have ever known.
+                I pray this new year brings you everything your heart desires —
+                joy without measure, love without end, and dreams that come true
+                one after another. You deserve the entire world, and I will
+                spend my whole life trying to give it to you. I love you,
+                endlessly.
+              </p>
+              <p class="surprise-sig">— Daniel, always yours</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container center">
+        <p class="footer-line">
+          Made with all my love, for <strong>Motunrayo</strong>.
+        </p>
+        <p class="footer-sub">Forever grateful. Forever yours. — Daniel</p>
+      </div>
+    </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Image viewer"
+    >
+      <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">
+        ‹
+      </button>
+      <div class="lb-stage">
+        <img id="lbImg" src="" alt="" />
+        <p class="lb-caption" id="lbCaption"></p>
+      </div>
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+      <div class="lb-counter" id="lbCounter"></div>
+    </div>
+
+    <canvas id="confetti" class="confetti-canvas" aria-hidden="true"></canvas>
+
+    <script src="Js/main.js"></script>
+  </body>
+</html>
